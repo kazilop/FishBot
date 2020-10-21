@@ -1,0 +1,39 @@
+﻿<Window x:Class="FishBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishBot"
+        mc:Ignorable="d"
+        Title="Fish Bot" Height="450" Width="800"
+        OpacityMask="White"
+        KeyDown="manageKey">
+
+    <Grid Opacity="0.8">
+        <Grid.OpacityMask>
+            <ImageBrush ImageSource="Images/bg2.jpg"/>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/bg2.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="21,24,0,0" VerticalAlignment="Top" Width="113" Height="45" FontSize="14" FontFamily="Terminator Cyr 4" Click="Button_Click"/>
+        <Label x:Name="LbPos" Content="Mouse Position" HorizontalAlignment="Left" Margin="137,375,0,0" VerticalAlignment="Top" Foreground="White" />
+        <Image x:Name="imgPlane" HorizontalAlignment="Left" Height="100" Margin="171,49,0,0" VerticalAlignment="Top" Width="101" OpacityMask="#FF51B7EB" >
+            <Image.Effect>
+                <DropShadowEffect Color="White"/>
+            </Image.Effect>
+        </Image>
+        <Label x:Name="LbPos_Copy" Content="Mouse Position : " HorizontalAlignment="Left" Margin="36,375,0,0" VerticalAlignment="Top" Foreground="White" />
+        <Label Content="Press F1" HorizontalAlignment="Left" Margin="414,190,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontSize="18"/>
+        <Button x:Name="btnSave" Content="Save File" HorizontalAlignment="Left" Margin="21,118,0,0" VerticalAlignment="Top" Width="113" Height="47" Click="btnSave_Click"/>
+        <GroupBox Header="Poplavok" HorizontalAlignment="Left" Height="152" Margin="393,24,0,0" VerticalAlignment="Top" Width="135">
+            <Image x:Name="imagePoplavok" HorizontalAlignment="Left" Height="100" Margin="16,10,0,0" VerticalAlignment="Top" Width="100"/>
+        </GroupBox>
+        <GroupBox Header="Vosklicanie" HorizontalAlignment="Left" Height="152" Margin="588,24,0,0" VerticalAlignment="Top" Width="135">
+            <Image x:Name="imageVoskl" HorizontalAlignment="Left" Height="100" Margin="16,10,0,0" VerticalAlignment="Top" Width="100"/>
+        </GroupBox>
+        <Label Content="Press F2" HorizontalAlignment="Left" Margin="618,190,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontSize="18"/>
+
+
+    </Grid>
+</Window>
